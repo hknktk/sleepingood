@@ -213,6 +213,16 @@
     font-weight: bold;
     padding: 2px;
   }
+
+  .js-target .flex .minibox{
+    opacity: 0;
+    transition: 1.2s;
+  }
+
+  .js-target.show .flex .minibox{
+    opacity: 1;
+    transform: none;
+  }
   
   main h2{
     font-size: 40px;
@@ -251,10 +261,6 @@
   .switch .minibox:not(:first-of-type) ul{
     position: relative;
     top: 40px;
-  }
-
-  .minibox{
-    position: relative;
   }
 
   .minibox img{
@@ -628,6 +634,18 @@
     font-size: 20px;
     color: rgb(255, 43, 43);
     font-weight: bold;
+  }
+
+
+
+  .js-target .flex .minibox{
+    opacity: 0;
+    transition: 1.2s;
+  }
+
+  .js-target.show .flex .minibox{
+    opacity: 1;
+    transform: none;
   }
   
   main h2{
