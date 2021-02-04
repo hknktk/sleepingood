@@ -1,0 +1,696 @@
+@media screen and (min-width:769px){
+  *,*::before,*::after{
+    box-sizing: border-box;
+  }
+  
+  body{
+    /* background-color: rgba(0, 0, 0, 0.8);
+     */
+    overflow-x: hidden;
+    background:linear-gradient(to bottom,rgb(255, 255, 255),rgb(206, 206, 206));
+  }
+  
+  
+  
+  .topPhoto{
+    position: relative;
+    width:100%;
+    height: 600px;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    display: flex;
+  }
+  
+  .topPhoto img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(.6) sepia(.8);
+    animation: sleeping 3.0s infinite;
+  }
+  
+  @keyframes sleeping {
+    50%{
+      transform: scale(1.1);
+    }
+  
+   
+  }
+  
+  
+  
+  header h1 {
+    width: 80%;
+    position: absolute;
+    left: 2%;
+    top: 70%;
+    font-size: 100px;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    animation: slide1 1.5s;
+  }
+  
+  @keyframes slide1{
+    0%{
+      transform: translateX(-1000px);
+    }
+  
+    60%{
+      transform: translateX(150px);
+      opacity: 1;
+      color: rgb(60, 97, 153);
+    }
+  
+    100%{
+        transform:none;
+    }
+  }
+  
+  
+  header #barMenu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.99);
+    z-index: 2;
+  }
+  
+  
+  #barMenu h2{
+     font-size: 30px;
+     padding: 5px 10px 5px 20px;
+     width: 40%;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     font-weight: bold;
+     font-family: serif;
+     line-height: 1.8;
+     /* transform: rotate(-.5deg); */
+     background:linear-gradient(to right,rgb(82, 171, 255),transparent);
+   }
+  
+   #barMenu ul{
+    position: absolute;
+    right: 0%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    width: 60%;
+    height: 100%;
+  }
+  
+  #barMenu li{
+    padding: 5px;
+    width: 20%;
+    line-height: 2;
+    text-align: center;
+    border-left: 1px solid rgb(20, 133, 133);
+  }
+  
+  
+  #barMenu a{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 1.8;
+    font-family: serif;
+  }
+
+  #nav{
+    display: none;
+  }
+  
+  
+  
+  header  #barMenu a:hover{
+    opacity: 0.7;
+  }
+  
+  main{
+    padding: 30px 10px;
+    margin: 0 auto;
+  }
+  
+  main h1{
+    font-size: 50px;
+    padding:  100px 10px 10px;
+    text-shadow: 1px 1px 10px rgb(99, 99, 99);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: serif;
+  }
+  
+  .block{
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .js-target{
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .importance .js-target{
+    background-color: rgba(240, 235, 235, 0.801);
+  }
+
+  .importance .js-target ul{
+    position: relative;
+    left: 10%;
+  }
+  
+  .js-target li{
+    line-height: 2;
+    font-family: serif;
+    font-size: 20px;
+  }
+  
+  .js-target li:not(:first-of-type){
+    margin: 50px auto 10px;
+  }
+  
+  section.flex{
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .flex h1{
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(255, 187, 0);
+    text-shadow: 1px 1px 1px rgb(185, 185, 185);
+  }
+  
+  .flex div{
+    width: 50%;
+    background-color: rgba(186, 193, 255, 0.4);
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .flex p{
+    text-align: justify;
+    font-size: 18px;
+    padding: 5px 30px 10px;
+    line-height: 2;
+  }
+  
+  .flex p span{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+  }
+  
+  .js-target span{
+    font-size: 25px;
+    color: rgb(255, 43, 43);
+    font-weight: bold;
+    padding: 2px;
+  }
+  
+  main h2{
+    font-size: 40px;
+    color: rgb(83, 71, 255);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .effect ul,.basic ul{
+    padding: 20px 0px;
+  }
+  
+  .effect li,.basic li{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 0, 221);
+    padding: 10px;
+    border-left: 2px solid rgb(255, 0, 0);
+  }
+  
+  .effect p, .basic p{
+    text-align: justify;
+    font-size: 25px;
+    font-family: serif;
+    line-height: 1.8;
+  }
+  
+  .switch li ,.wakeUp li{
+    color: rgb(255, 0, 221);
+    border-left: 2px solid rgb(255, 0, 0);
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .switch .minibox:not(:first-of-type) ul{
+    position: relative;
+    top: 40px;
+  }
+
+  .minibox{
+    position: relative;
+  }
+
+  .minibox img{
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }
+
+  footer{
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+  }
+
+
+  footer p{
+    color: #fff;
+    padding: 30px;
+  }
+ 
+
+}
+
+
+
+
+@media screen and (max-width:768px){
+  *,*::before,*::after{
+    box-sizing: border-box;
+  }
+  
+  body{
+    /* background-color: rgba(0, 0, 0, 0.8);
+     */
+    overflow-x: hidden;
+    background:linear-gradient(to bottom,rgb(255, 255, 255),rgb(206, 206, 206));
+  }
+
+ html.none,body.none{
+   overflow-y: hidden;
+ }
+  
+  
+  
+  .topPhoto{
+    position: relative;
+    width:100%;
+    height: 300px;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    display: flex;
+    background-color: rgba(167, 138, 101, 0.5);
+  }
+  
+  .topPhoto img{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    left: 5%;
+    filter: brightness(.6) sepia(.8);
+    animation: sleeping 3.0s infinite;
+  }
+  
+  @keyframes sleeping {
+    50%{
+      transform: scale(1.11);
+    }
+  
+   
+  }
+  
+  
+  
+  header h1 {
+    width: 100%;
+    font-size: 35px;
+    position: absolute;
+    left: 0;
+    top: 70%;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    animation: slide1 1.5s;
+  }
+  
+  @keyframes slide1{
+    0%{
+      transform: translateX(-1000px);
+    }
+  
+    60%{
+      transform: translateX(150px);
+      opacity: 1;
+      color: rgb(60, 97, 153);
+    }
+  
+    100%{
+        transform:none;
+    }
+  }
+
+
+  
+  
+  header nav.barMenu{
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.99);
+    z-index: 2;
+  }
+  
+  
+   nav.barMenu h2{
+     font-size: 18px;
+     padding: 2px;
+     width: 100%;
+     height: 5%;
+     /* position: absolute; */
+     position: fixed;
+     left: 0;
+     font-weight: bold;
+     font-family: serif;
+     text-align: center;
+     line-height: 1.8;
+     /* transform: rotate(-.5deg); */
+     background:linear-gradient(to right,rgb(82, 171, 255),transparent);
+   }
+  
+   nav.barMenu ul{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    margin: 0 auto;
+    padding: 2px;
+    display: flex;
+    width: 80%;
+    height: 40%;
+  }
+  
+  nav.barMenu li{
+    width: 20%;
+    text-align: center;
+    border-left: 1px solid rgb(20, 133, 133);
+  }
+  
+  
+   nav.barMenu a{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    text-decoration: none;
+    padding: 2px;
+    font-family: serif;
+  }
+
+
+  .menuButton{
+    position: fixed;
+    top: 60px;
+    right: 2px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: rgba(36, 196, 245, 0.8);
+    border-radius: 50%;
+    /* background-color: rgb(255, 0, 0); */
+  }
+
+  
+  .menuButton div{
+    display: block;
+    height: 2px;
+    width: 45%;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    background-color: rgb(0, 0, 0);
+    transition: .8s;
+  }
+
+
+
+  
+  .menuButton div:nth-child(1){
+    transform: translateY(-10px);
+  }
+  
+  
+  .menuButton div:nth-child(3){
+    transform: translateY(10px);
+    }
+  
+  .menuButton.active div:nth-child(1){
+    transform: rotate(45deg);
+  }
+  
+  .menuButton.active div:nth-child(2){
+    opacity: 0;
+  }
+  
+  .menuButton.active div:nth-child(3){
+    transform: rotate(-45deg);
+  }
+
+  .menuButton.active{
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 0px;
+    z-index: 5;
+  }
+
+
+  #nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1000px);
+    transition: .3s;
+  }
+
+  #nav.active{
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  #nav ul{
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+    padding: 50px 20px;
+  }
+
+  #nav ul li{
+    margin: 40px 0px;
+    border-bottom: 1px solid #fff;
+  }
+
+  #nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: serif;
+  }
+
+  #list li:last-of-type{
+    margin-top: 120px;
+    border-bottom: none;
+    position: relative;
+    left: 40%;
+  }
+
+
+  #list li:last-of-type a{
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  #list li:last-of-type a::before{
+     content: "↺";
+  }
+
+  a{
+    transition: .1s;
+  }
+
+  
+  main{
+    padding: 30px 5px;
+  }
+  
+  main .block>h1{
+    font-size: 25px;
+    font-weight: bold;
+    padding:  50px 10px 10px;
+    text-shadow: 1px 1px 10px rgb(99, 99, 99);
+    color: rgb(0, 0, 0);
+    font-family: serif;
+    text-align: center;
+  }
+
+  main .block>h1::before{
+    content: "/";
+  }
+
+
+  
+  .block{
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .flex{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .minibox{
+    min-width: 100%;
+  }
+  
+  .js-target{
+    display: block;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .importance .js-target{
+    background-color: rgba(240, 235, 235, 0.801);
+  }
+
+  .importance .js-target ul{
+    position: relative;
+   
+  }
+  
+  .js-target li{
+    line-height: 1.5;
+    font-family: serif;
+    font-size: 16px;
+  }
+  
+  .js-target li:not(:first-of-type){
+    margin: 20px auto 10px;
+  }
+  
+  section.flex{
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .flex h1{
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(255, 187, 0);
+    text-shadow: 1px 1px 1px rgb(185, 185, 185);
+  }
+  
+  .flex div{
+    width: 100%;
+    background-color: rgba(186, 193, 255, 0.4);
+    margin: 10px 1px;
+    padding: 5px;
+    border-radius: 5px;
+    height: auto;
+  }
+  
+  .flex p{
+    text-align: justify;
+    font-size: 16px;
+    padding: 5px 10px 10px;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  .flex p span{
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+  }
+  
+  .js-target span{
+    font-size: 20px;
+    color: rgb(255, 43, 43);
+    font-weight: bold;
+  }
+  
+  main h2{
+    font-size: 22px;
+    color: rgb(83, 71, 255);
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .effect ul,.basic ul{
+    padding: 20px 0px;
+  }
+  
+  .effect li,.basic li{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 0, 221);
+    padding: 10px;
+    border-left: 2px solid rgb(255, 0, 0);
+  }
+  
+  .minibox p ,.basic p ,.effect p,.switch ul p{
+    text-align: justify;
+    font-size: 15px;
+    font-family: serif;
+    line-height: 1.5;
+    padding: 5px;
+  }
+  
+  .switch li ,.wakeUp li{
+    color: rgb(255, 0, 221);
+    border-left: 2px solid rgb(255, 0, 0);
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .switch .minibox>p,
+  .wakeUp .minibox>p{
+     font-size: 14px;
+     line-height: 1.5;
+  }
+
+  .minibox img{
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }
+
+  footer{
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+  }
+
+
+  footer p{
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+  }
+ 
+
+  
+}
+
+
